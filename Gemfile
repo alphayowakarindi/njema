@@ -72,3 +72,8 @@ end
 
 gem 'devise'
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+# shrine gem for image upload
+gem 'shrine', '~> 3.4'
+# image_processing gem for processing the uploaded images
+gem 'image_processing', '~> 1.12', '>= 1.12.2'
