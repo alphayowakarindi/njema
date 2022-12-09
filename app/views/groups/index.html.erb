@@ -1,14 +1,15 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Groups</h1>
-
 <div id="groups">
+  <nav>
+    <i class="fa-solid fa-bars"></i>
+    <h1>TRANSACTIONS</h1>
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </nav>
   <% @groups.each do |group| %>
-    <%= render group %>
-    <p>
-      <%= link_to "Show this group", group %>
-    </p>
+    <%= link_to group do %>
+      <%= render group %>
+    <% end %>
   <% end %>
+  <div class="add-resource-link">
+    <%= link_to "Add a new Category", new_group_path %>
+  </div>
 </div>
-
-<%= link_to "New group", new_group_path %>

@@ -1,14 +1,12 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
-  <p>
-    <strong>Icon:</strong>
+<div id="<%= dom_id group %>" class="group">
+  <div>
     <%= image_tag group.icon.variant(:thumb) %>
-  </p>
-  <p>
-    <strong>User:</strong>
-    <%= group.user_id %>
-  </p>
+  </div>
+  <div>
+    <span><%= group.name %></span>
+    <span><%= group.created_at.strftime("%d %b %Y") %></span>
+  </div>
+  <div>
+    <span class="total">$45.00</span>
+  </div>
 </div>
