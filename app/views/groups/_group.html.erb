@@ -3,15 +3,12 @@
     <strong>Name:</strong>
     <%= group.name %>
   </p>
-
   <p>
     <strong>Icon:</strong>
-    <%= group.icon %>
+    <%= image_tag group.icon.variant(:thumb) %>
   </p>
-
   <p>
     <strong>User:</strong>
     <%= group.user_id %>
   </p>
-
 </div>
