@@ -57,6 +57,16 @@ nav i {
   color: #fff;
 }
 
+form ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+form ul li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
 /* ********************************************************************** */
 
 /* transactions page */
@@ -139,12 +149,12 @@ nav i {
   background-color: #fff;
 }
 
-#new-group ul {
-  list-style: none;
-  margin-bottom: 10px;
-}
+/* ********************************************************************** */
 
-#new-group ul li {
-  margin: 5px 0;
-  font-size: 16px;
+/* new entities page */
+
+/* ********************************************************************** */
+#new-entity form {
+  padding: 16px;
+  background-color: #fff;
 }

@@ -1,9 +1,10 @@
-<h1>New entity</h1>
-
-<%= render "form", entity: @entity %>
-
-<br>
-
-<div>
-  <%= link_to "Back to entities", entities_path %>
+<div id="new-entity">
+  <nav>
+    <%= link_to entities_path do %>
+      <i class="fa-solid fa-angle-left"></i>
+    <% end %>
+    <h1>New Transaction</h1>
+    <span></span>
+  </nav>
+  <%= render "form", entity: @entity %>
 </div>
