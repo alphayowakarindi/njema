@@ -22,12 +22,28 @@
   font-family: 'Gudea', sans-serif;
 }
 
-/* ********************************************************************** */
+body {
+  background-color: #f1f1f1;
+}
 
-/* transactions page */
+input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
 
-/* ********************************************************************** */
-#groups nav {
+input[type='submit'] {
+  cursor: pointer;
+  background-color: #49a904;
+  color: #fff;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,12 +52,18 @@
   padding: 30px 15px;
 }
 
-#groups nav i {
+nav i {
   font-size: 22px;
+  color: #fff;
 }
 
+/* ********************************************************************** */
+
+/* transactions page */
+
+/* ********************************************************************** */
+
 #groups {
-  background-color: #f1f1f1;
   min-height: 100vh;
 }
 
@@ -101,4 +123,28 @@
   border: 1px solid #fff;
   width: 94%;
   padding: 15px 0;
+}
+
+/* ********************************************************************** */
+
+/* new group page */
+
+/* ********************************************************************** */
+#new-group {
+  min-height: 100vh;
+}
+
+#new-group form {
+  padding: 16px;
+  background-color: #fff;
+}
+
+#new-group ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#new-group ul li {
+  margin: 5px 0;
+  font-size: 16px;
 }
