@@ -110,7 +110,7 @@ form ul li {
   height: 90px;
 }
 
-#groups .group .total {
+#groups .total {
   display: inline-block;
   margin-top: 20px;
   color: #3a454a;
@@ -178,4 +178,36 @@ form ul li {
 
 #new-entity form .checkbox label {
   margin-bottom: 12px;
+}
+
+/* ********************************************************************** */
+
+/* group/category details page */
+
+/* ********************************************************************** */
+#groups hr {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#groups .detailed-transaction {
+  background-color: #fff;
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 4fr;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#groups .detailed-transaction span {
+  color: #3a454a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#groups .detailed-transaction span:last-child {
+  color: #999;
+  font-size: 15px;
+  font-weight: 500;
 }
