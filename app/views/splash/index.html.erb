@@ -1,2 +1,7 @@
-<h1>Splash#index</h1>
-<p>Find me in app/views/splash/index.html.erb</p>
+<div id="splash">
+  <h1>Njema</h1>
+  <%=  link_to new_user_session_path do %>
+    <input type="button" value="LOG IN" >
+  <% end %>
+  <%=  link_to 'SIGN UP', new_user_registration_path, {class: 'link'} %>
+</div>
