@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categorizations
   resources :entities
   resources :groups
   devise_for :users

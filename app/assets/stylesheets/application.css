@@ -26,15 +26,17 @@ body {
   background-color: #f1f1f1;
 }
 
-input {
+input,
+select {
   width: 100%;
-  padding: 6px;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 20px;
   font-size: 16px;
+  background-color: #fff;
 }
 
 input[type='submit'] {
@@ -151,10 +153,29 @@ form ul li {
 
 /* ********************************************************************** */
 
-/* new entities page */
+/* new entities/transactions page */
 
 /* ********************************************************************** */
 #new-entity form {
   padding: 16px;
   background-color: #fff;
+}
+
+#new-entity form .checkbox {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  justify-content: start;
+}
+
+#new-entity form .checkbox input[type='checkbox'] {
+  margin-bottom: 12px;
+  margin-top: 1px;
+
+  width: 17px;
+  height: 17px;
+}
+
+#new-entity form .checkbox label {
+  margin-bottom: 12px;
 }

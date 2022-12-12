@@ -1,5 +1,6 @@
 class Group < ApplicationRecord
   belongs_to :user
+  has_many :categorizations
   has_many :entities, through: :categorizations
 
   has_one_attached :icon do |attachable|
