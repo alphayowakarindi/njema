@@ -7,6 +7,8 @@
     <span><%= group.created_at.strftime("%d %b %Y") %></span>
   </div>
   <div>
-    <span class="total">$45.00</span>
+    <span class="total">
+      <%= "$#{group.entities.sum('amount')}.00" %>
+    </span>
   </div>
 </div>
