@@ -69,6 +69,12 @@ form ul li {
   font-size: 16px;
 }
 
+.alert {
+  color: red !important;
+}
+.notice {
+  color: green;
+}
 /* ********************************************************************** */
 
 /* transactions page */
@@ -210,4 +216,38 @@ form ul li {
   color: #999;
   font-size: 15px;
   font-weight: 500;
+}
+
+/* ********************************************************************** */
+
+/* sign up and login page */
+
+/* ********************************************************************** */
+#sign-up,
+#login,
+#forgot-password {
+  padding: 30px;
+}
+#sign-up h2,
+#login h2,
+#forgot-password h2 {
+  margin-bottom: 30px;
+}
+
+#login a,
+#forgot-password a,
+#sign-up a {
+  text-decoration: none;
+  color: #3a454a;
+  font-size: 20px;
+}
+
+#login .remember input {
+  width: 25px;
+}
+
+#login a,
+#forgot-password a {
+  display: inline-block;
+  margin-bottom: 6px;
 }
