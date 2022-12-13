@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root to: 'splash#index'
+
+  # redirect on refresh after sign up fails
+  get '/users', to: redirect('/users/sign_up')
 end
