@@ -86,6 +86,7 @@ form ul li {
 
 #groups {
   min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 #groups a {
