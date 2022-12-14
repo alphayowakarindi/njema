@@ -278,11 +278,11 @@ form ul li {
   font-size: 42px;
 }
 
-#splash input {
+#splash .login-btn {
   background-color: #346fb6;
 }
 
 #splash .link,
-input {
+#splash .login-btn {
   font-size: 18px;
 }
