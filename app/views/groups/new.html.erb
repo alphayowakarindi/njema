@@ -1,0 +1,10 @@
+<div id="new-group">
+  <nav>
+    <%= link_to groups_path do %>
+      <i class="fa-solid fa-angle-left"></i>
+    <% end %>
+    <h1>New Category</h1>
+    <span></span>
+  </nav>
+  <%= render "form", group: @group %>
+</div>

@@ -1,0 +1,24 @@
+<div id="groups">
+  <nav>
+    <%= link_to groups_path do %>
+      <i class="fa-solid fa-angle-left"></i>
+    <% end %>
+    <h1>DETAILS</h1>
+    <span></span>
+  </nav>
+  <a href="#">
+    <%= render 'group', group: @group %>
+  </a>
+  <hr>
+  <% @group.entities.reverse_each do |entity| %>
+    <div class="detailed-transaction">
+      <span class="name"><%= entity.name %></span>
+      <span class="amount"><%= "$#{entity.amount}" %></span>
+      <%# <span>12 Dec 2022 at 3pm</span> %>
+      <span class="date"> <%= entity.created_at.strftime("%d %b %Y") %> at <%= entity.created_at.strftime("%H" " %p") %>  </span>
+    </div>
+  <% end %>
+  <div class="add-resource-link">
+    <%= link_to "Add a new Transaction", new_entity_path %>
+  </div>
+</div>

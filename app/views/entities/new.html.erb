@@ -1,0 +1,10 @@
+<div id="new-entity">
+  <nav>
+    <%= link_to :back do %>
+      <i class="fa-solid fa-angle-left"></i>
+    <% end %>
+    <h1>New Transaction</h1>
+    <span></span>
+  </nav>
+  <%= render "form", entity: @entity, categorization: @categorization %>
+</div>

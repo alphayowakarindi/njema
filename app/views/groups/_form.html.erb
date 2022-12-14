@@ -1,0 +1,22 @@
+<%= form_with(model: group) do |form| %>
+  <% if group.errors.any? %>
+    <div style="color: red">
+      <ul>
+        <% group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :icon, style: "display: block" %>
+    <%= form.file_field :icon %>
+  </div>
+  <div>
+    <%= form.submit 'Submit' %>
+  </div>
+<% end %>

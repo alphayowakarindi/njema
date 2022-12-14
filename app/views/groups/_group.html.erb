@@ -1,0 +1,14 @@
+<div id="<%= dom_id group %>" class="group">
+  <div>
+    <%= image_tag group.icon.variant(:thumb) %>
+  </div>
+  <div>
+    <span> <%= group.name %> </span>
+    <span><%= group.created_at.strftime("%d %b %Y") %></span>
+  </div>
+  <div>
+    <span class="total">
+      <%= "$#{group.entities.sum('amount')}.00" %>
+    </span>
+  </div>
+</div>
