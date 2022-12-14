@@ -9,7 +9,7 @@ RSpec.describe 'Creating a group', type: :feature do
   scenario 'adds a new group when name and icon is entered' do
     visit new_group_path
     fill_in('Name', with: 'Sports')
-    attach_file('Icon', "#{Rails.root}/integration_test_image/test.jpg")
+    attach_file('Icon', "#{Rails.root}/spec/support/test.jpg")
     click_on 'Submit'
     sleep(1)
     visit groups_path
@@ -18,7 +18,7 @@ RSpec.describe 'Creating a group', type: :feature do
 
   scenario 'gives an error when no name is entered' do
     visit new_group_path
-    attach_file('Icon', "#{Rails.root}/integration_test_image/test.jpg")
+    attach_file('Icon', "#{Rails.root}/spec/support/test.jpg")
     click_on 'Submit'
     expect(page).to have_content("Name can't be blank")
   end

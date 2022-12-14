@@ -4,7 +4,7 @@ RSpec.describe Group, type: :model do
   before :each do
     user = User.create(name: 'Gachero', email: 'gacheruuuu@gmail.com', password: '123456',
                        password_confirmation: '123456')
-    file = fixture_file_upload("#{Rails.root}/integration_test_image/test.jpg", 'image/png')
+    file = fixture_file_upload("#{Rails.root}/spec/support/test.jpg", 'image/png')
     @group = Group.create(name: 'Sports', icon: file)
     @group.user = user
   end
