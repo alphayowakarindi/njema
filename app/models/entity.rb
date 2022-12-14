@@ -1,9 +1,9 @@
 class Entity < ApplicationRecord
   belongs_to :author, class_name: 'User'
-  has_many :categorizations
+  has_many :categorizations, dependent: :destroy
   has_many :groups, through: :categorizations
 
-  #  validations
+  #  validationss
   validates :name, presence: true, length: { maximum: 40 }
   validates :amount, presence: true
   validates :group_ids, presence: true
