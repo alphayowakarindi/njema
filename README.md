@@ -164,4 +164,4 @@ Special thanks to [Gregoire Vella](https://www.behance.net/gregoirevella) for cr
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
