@@ -75,7 +75,13 @@ form ul li {
 }
 
 .notice {
-  color: green;
+  color: #fff;
+  background-color: #49a904;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
 }
 
 /* ********************************************************************** */
