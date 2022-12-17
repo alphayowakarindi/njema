@@ -8,6 +8,14 @@
     <%= link_to group do %>
       <%= render group %>
     <% end %>
+    <%= form_with url: group_path(group), method: :delete do |form| %>
+      <div class="destroy-group">
+        <%= form.button  do %>
+          <i class="fa-solid fa-trash"></i>
+          Delete
+        <% end %>
+      </div>
+    <% end %>
   <% end %>
   <div class="add-resource-link">
     <%= link_to "Add a new Category", new_group_path %>
