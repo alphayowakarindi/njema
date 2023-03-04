@@ -1,0 +1,13 @@
+current directory: /home/alphayo/Desktop/Ruby & ROR books/njema/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+/home/alphayo/.rbenv/versions/3.0.1/bin/ruby -I /home/alphayo/.rbenv/versions/3.0.1/lib/ruby/3.0.0 -r ./siteconf20230304-23215-77jqvd.rb extconf.rb
+creating Makefile
+
+current directory: /home/alphayo/Desktop/Ruby & ROR books/njema/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= clean
+
+current directory: /home/alphayo/Desktop/Ruby & ROR books/njema/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\=
+make: Nothing to be done for 'all'.
+
+current directory: /home/alphayo/Desktop/Ruby & ROR books/njema/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= install
